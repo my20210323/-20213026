@@ -1,4 +1,4 @@
-from django.shortcuts import render
+﻿from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from  django.urls import reverse
 from django.contrib.auth import login,logout,authenticate
@@ -28,3 +28,4 @@ def register(request):
             return HttpResponseRedirect(reverse('learning_logs:index'))
     context={'form':form}
     return render(request,'users/register.html',context)
+#test
